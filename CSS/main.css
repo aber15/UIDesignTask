@@ -1,0 +1,208 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #eee;
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+/*sidebarStyle*/
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background-color: #38A7A7;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 10px;
+    border: 1px solid #248C8C;
+    border-radius: 5px;
+    background-color: #248C8C;
+    height: 50px;
+    width: 200px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+#sidebar .sidebar-header #mail-icon{
+    margin: 3px 6px;
+    font-size: 18px;
+    color: #F9B52E;
+}
+#sidebar .sidebar-header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#icon{
+    margin-left: 25px;
+}
+.customBadge{
+    float: right;
+    margin-right: 5%;
+    margin-top: 1%;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #F9B52E;
+}
+#sidebar .list-contents li{
+    margin-bottom: 5%;
+}
+#sidebar .list-contents a{
+    text-decoration: none;
+    color: #fff;
+    padding-left: 10px;
+}
+.subList{
+    margin-left: 16%;
+}
+.subList li{
+    margin-top: 5%;
+}
+.customLi{
+    padding-top: 15px;
+}
+.list-contents li:hover{
+    background-color: #248C8C;
+    border-left: 3px solid #F9B52E;
+
+}
+.list-contents .divider{
+    border-bottom: 1px solid #eee;
+    margin: 0 10px 0 -10px;
+}
+
+
+
+/*nanbarStyle*/
+.newNav{
+    background-color: #FFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+}
+.new-btn-info{
+    position: relative;
+    left: -1%;
+    background-color: #38A7A7;
+}
+.newNav .navbar-logo{
+    font-family: Sansation;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 29px;
+    align-items: center;
+    color: #38A7A7;
+}
+.navContent input{
+    background-color: #E4F5F5;
+    border-radius: 3px;
+}
+#list-icon a{
+    color: #38A7A7;
+    margin: 0 5px;
+}
+#list-icon span{
+    color: #585858;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 18px;
+    margin-right: 5px;
+}
+.input-form .inputIcon{
+    width: 25vw;
+}
+.inputIcon::-webkit-input-placeholder{
+  font-family: "FontAwesome";
+  color: #f9b52e;
+}
+.inputIcon::-moz-placeholder{
+  font-family: FontAwesome;
+  color: #f9b52e;
+}
+  
+.inputIcon::-ms-input-placeholder{
+  font-family: FontAwesome;
+  color: #f9b52e;
+  }
+.mainLoginInput::placeholder{
+    font-family: FontAwesome;
+    color: #f9b52e;
+}  
+
+/*bodyContent */
+.banner{ 
+    margin: 2% 0;
+    display: flex;
+    background: url(../img/vector.png) no-repeat;
+    background-position: center;
+    background-color: #E4F5F5;
+    text-transform: capitalize;
+}
+.banner h4{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.banner .customspan{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.banner .span-lead{
+    color: #248C8C;
+    font-weight: bold;
+}
+#content {
+    width: calc(100% - 250px);
+    transition: all 0.3s;
+    position: absolute;
+    right: 0;
+}
+
+#content.active {
+    width: 100%;
+}
+#openedmail{
+    display: none;
+    background-color: #fff;
+}
+#openedmail img{
+    width: 90%;
+    margin: 5%;
+}
+.openedMailHeader{
+    height: 50px;
+    background-color: #E4F5F5;
+    padding: 2%;
+}
+.openedMailHeader span{
+    font-weight: bold;
+}
+
+/*MEDIAQUERIES*/
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}

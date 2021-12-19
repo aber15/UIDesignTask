@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/main.css" type="text/css" />
+
+    <script data-search-pseudo-elements defer src="JS/all.min.js"></script>
+  </head>
+  <body>
+    <!--bodyContent sideBar+mainContent-->
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <i class="fas fa-envelope" id="mail-icon"></i>
+          <a href="#">Compose Mail</a>
+        </div>
+        <div class="list-contents">
+          <ul class="list-unstyled">
+            <li>
+              <i class="fas fa-inbox" id="icon"></i>
+              <a href="#"
+                >Inbox<span class="badge badge-light customBadge">2</span></a
+              >
+            </li>
+            <li>
+              <i class="fas fa-star" id="icon"></i>
+              <a href="#">Starred</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope-open" id="icon"></i>
+              <a href="#">Sent</a>
+            </li>
+            <div class="divider"></div>
+            <li class="customLi">
+              <i class="fas fa-align-center" id="icon"></i>
+              <a href="#">Categories</a>
+            </li>
+            <ul class="list-unstyled subList">
+              <li>
+                <a href="#">Social</a>
+              </li>
+              <li>
+                <a href="#">Updates</a>
+              </li>
+              <li>
+                <a href="#">Forums</a>
+              </li>
+              <li>
+                <a href="#">Promotions</a>
+              </li>
+            </ul>
+            <div class="divider"></div>
+            <li class="customLi">
+              <i class="fas fa-trash" id="icon"></i>
+              <a href="#">Trash</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navbar  -->
+      <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light newNav">
+          <div class="container">
+            <button
+              type="button"
+              id="sidebarCollapse"
+              class="btn btn-info new-btn-info"
+            >
+              <i class="fas fa-align-left"></i>
+            </button>
+            <a class="navbar-brand navbar-logo" href="#">
+              <img
+                src="img/logo.png"
+                class="d-inline-block align-top"
+                alt="logo"
+              />
+              mail ipsum
+            </a>
+            <div
+              class="collapse navbar-collapse navContent"
+              id="navbarSupportedContent"
+            >
+              <form class="form-inline input-form mr-auto my-2 my-lg-0">
+                <input
+                  class="form-control inputIcon"
+                  type="search"
+                  placeholder="&#xf002; Search here..."
+                  aria-label="Search"
+                />
+              </form>
+              <ul class="navbar-nav my-2 my-lg-0" id="list-icon">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="far fa-envelope-open"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-cog"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fas fa-question"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span>John Alex</span>
+                    <i class="fas fa-ellipsis-v"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- bodyContent  -->
+        <div class="bodyContent">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="jumbotron jumbotron-fluid banner">
+                  <div class="container">
+                    <h4 class="display-4">
+                      welcome back john,
+                      <span class="customspan">you have...</span>
+                    </h4>
+                    <p class="lead">
+                      <span class="span-lead">2</span> new mails.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <table class="table table-light table-stripped">
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td><i class="far fa-star"></i></td>
+                      <td><b>Marc John</b></td>
+                      <td>
+                        <b>New Envelope</b>
+                      </td>
+                      <td>23-1-2021</td>
+                      <td>
+                        <a href="#" id="tdCollapse">
+                          <img src="img/attachment.png" alt="attachmentpic" />
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td><i class="far fa-star"></i></td>
+                      <td>Marc John</td>
+                      <td>
+                        <b>New Updates</b>
+                      </td>
+                      <td>23-1-2021</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td><i class="far fa-star"></i></td>
+                      <td>Bank</td>
+                      <td>Receipt</td>
+                      <td>22-1-2021</td>
+                      <td><img src="img/receipt.png" alt="receipt" /></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td><i class="far fa-star"></i></td>
+                      <td>Emy Wilsom</td>
+                      <td>Upcoming webinar</td>
+                      <td>21-1-2021</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td><i class="far fa-star"></i></td>
+                      <td>Davild Walker</td>
+                      <td>Resources to help reach your globle aud...</td>
+                      <td>20-1-2021</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td><i class="far fa-star"></i></td>
+                      <td>Asana</td>
+                      <td>Daily work summery</td>
+                      <td>20-1-2021</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td><i class="far fa-star"></i></td>
+                      <td>Asana</td>
+                      <td>Daily work summery</td>
+                      <td>19-1-2021</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td><i class="far fa-star"></i></td>
+                      <td>Asana</td>
+                      <td>Daily work summery</td>
+                      <td>18-1-2021</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td><i class="far fa-star"></i></td>
+                      <td>Asana</td>
+                      <td>Daily work summery</td>
+                      <td>17-1-2021</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td><i class="far fa-star"></i></td>
+                      <td>Asana</td>
+                      <td>Daily work summery</td>
+                      <td>16-1-2021</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+                <div id="openedmail">
+                  <div class="openedMailHeader">
+                    <span>New Envelope</span>
+                  </div>
+                  <img src="img/bank.png" alt="" />
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/script.js"></script>
+  </body>
+</html>
